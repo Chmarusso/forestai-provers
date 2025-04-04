@@ -3,7 +3,7 @@ services:
     depends_on:
       - anvil-l1
       - anvil-l2-op
-    image: ghcr.io/vlayer-xyz/call_server:latest
+    image: ghcr.io/vlayer-xyz/call_server:0.1.0-nightly-20250403-d442cea
     container_name: vlayer-call-server
     pull_policy: always
     environment:
