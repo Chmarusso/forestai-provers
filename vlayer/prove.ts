@@ -19,6 +19,7 @@ const {
   confirmations,
 } = await createContext(config);
 
+// Deploy test ForestSlasher contract, remove this when you have your own contract
 const slasherDeployTx = await ethClient.deployContract({
   abi: forestSlasherSpec.abi,
   bytecode: forestSlasherSpec.bytecode.object,
@@ -34,7 +35,7 @@ const forestSlasherAddr = await waitForContractDeploy({
 const { prover, verifier } = await deployVlayerContracts({
   proverSpec,
   verifierSpec,
-  proverArgs: [forestSlasherAddr],
+  proverArgs: [forestSlasherAddr], // pass ForestSlasher contract address to the prover
   verifierArgs: [],
 });
 
@@ -57,13 +58,7 @@ const [proof, aggregates] = result;
 console.log("Proof result:", result);
 console.log("Aggregates:", aggregates);
 
-await ethClient.writeContract({
-  address: forestSlasherAddr,
-  abi: forestSlasherSpec.abi,
-  functionName: "aggregateScores",
-  args: [],
-  account: john,
-});
+// Verify the proof on-chain
 
 const verificationHash = await ethClient.writeContract({
   address: verifier,

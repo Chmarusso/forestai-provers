@@ -13,7 +13,19 @@ contract ScoresProver is Prover {
     }
 
     function proveScores() public returns (Proof memory, ForestSlasher.EpochScoreAggregate[] memory) {
-        ForestSlasher.EpochScoreAggregate[] memory aggregates = forestSlasher.aggregateScores();
+        // TODO: Call real aggregateScores() function
+        // ForestSlasher.EpochScoreAggregate[] memory aggregates = forestSlasher.aggregateScores();
+
+        // TODO: Remove this mock
+        ForestSlasher.EpochScoreAggregate[] memory aggregates = new ForestSlasher.EpochScoreAggregate[](3);
+        for (uint256 i = 0; i < 3; i++) {
+            aggregates[i] = ForestSlasher.EpochScoreAggregate({
+                ptAddr: address(uint160(i)),
+                revenueAtEpochClose: uint256(i),
+                provRanks: new uint256[2][](0),
+                valRanks: new uint256[2][](0)
+            });
+        }
 
         return (proof(), aggregates);
     }
