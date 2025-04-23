@@ -1,6 +1,6 @@
 services:
   vdns_server:
-    image: ghcr.io/vlayer-xyz/vdns_server:0.1.0-nightly-20250403-d442cea
+    image: ghcr.io/vlayer-xyz/vdns_server:0.2.0-nightly-20250423-82a6f8a555f221fb615762fedd26bc534fd0df83
     container_name: vlayer-vdns-server
     platform: linux/amd64
     environment:

@@ -1,4 +1,9 @@
 @openzeppelin-contracts-5.0.1/=dependencies/@openzeppelin-contracts-5.0.1/
 forge-std-1.9.4/=dependencies/forge-std-1.9.4/
+forge-std-1.9.4/src/=dependencies/forge-std-1.9.4/src/
+forge-std/=dependencies/forge-std-1.9.4/src/
+openzeppelin-contracts/=dependencies/@openzeppelin-contracts-5.0.1/
 risc0-ethereum-2.0.0/=dependencies/risc0-ethereum-2.0.0/
 vlayer-0.1.0-nightly-20250403-d442cea/=dependencies/vlayer-0.1.0-nightly-20250403-d442cea/
+vlayer-0.1.0/=dependencies/vlayer-0.2.0-nightly-20250423-82a6f8a555f221fb615762fedd26bc534fd0df83/src/
+vlayer-0.2.0-nightly-20250423-82a6f8a555f221fb615762fedd26bc534fd0df83/=dependencies/vlayer-0.2.0-nightly-20250423-82a6f8a555f221fb615762fedd26bc534fd0df83/

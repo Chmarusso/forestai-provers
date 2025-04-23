@@ -8,7 +8,7 @@ fs_permissions = [{ access = "read", path = "./testdata"}]
 "@openzeppelin-contracts" = "5.0.1"
 forge-std = "1.9.4"
 risc0-ethereum = { version = "2.0.0", url = "https://github.com/vlayer-xyz/risc0-ethereum/releases/download/v2.0.0-soldeer/contracts.zip" }
-vlayer = "0.1.0-nightly-20250403-d442cea"
+vlayer = "0.2.0-nightly-20250423-82a6f8a555f221fb615762fedd26bc534fd0df83"
 
 [soldeer]
 # whether soldeer manages remappings

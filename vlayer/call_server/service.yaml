@@ -3,14 +3,14 @@ services:
     depends_on:
       - anvil-l1
       - anvil-l2-op
-    image: ghcr.io/vlayer-xyz/call_server:0.1.0-nightly-20250403-d442cea
+    image: ghcr.io/vlayer-xyz/call_server:0.2.0-nightly-20250423-82a6f8a555f221fb615762fedd26bc534fd0df83
     container_name: vlayer-call-server
     pull_policy: always
     environment:
       RUST_LOG: "info,call_engine=debug"
     volumes:
       - ../fixtures/jwt-authority.key.pub:/jwt-authority.key.pub
-    command: "--proof fake --host 0.0.0.0 --rpc-url 31337:http://anvil-l1:8545 --rpc-url 31338:http://anvil-l2-op:8545 --public-key /jwt-authority.key.pub"
+    command: "--proof fake --host 0.0.0.0 --rpc-url 31337:http://anvil-l1:8545 --rpc-url 31338:http://anvil-l2-op:8545 --jwt-public-key /jwt-authority.key.pub"
     ports:
       - "127.0.0.1:3000:3000"
     healthcheck:

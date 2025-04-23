@@ -21,7 +21,7 @@ integrity = "002c2e20d189f8346e8683c6253c60a1603f63cb2567329cd7c53b9960bf295b"
 
 [[dependencies]]
 name = "vlayer"
-version = "0.1.0-nightly-20250403-d442cea"
-url = "https://soldeer-revisions.s3.amazonaws.com/vlayer/0_1_0-nightly-20250403-d442cea_03-04-2025_06:26:24_vlayer.zip"
-checksum = "3615897a325645c63d2994b7d77445a6f891c2364162e34e4f6ca24c6536605f"
-integrity = "8dd841337fb81467ccb486861dad75c2aaf0493ba118008e40d7a32704af114f"
+version = "0.2.0-nightly-20250423-82a6f8a555f221fb615762fedd26bc534fd0df83"
+url = "https://soldeer-revisions.s3.amazonaws.com/vlayer/0_2_0-nightly-20250423-82a6f8a555f221fb615762fedd26bc534fd0df83_23-04-2025_10:09:19_vlayer.zip"
+checksum = "50d71ff1f3e86d0e65c56784ff39ba18bac1eceb15c1504ff6f09ec734c55137"
+integrity = "d0a9251f2c439726799f67d84d07ec0e9309b05641251cdea7e7906b2b7d44d1"
