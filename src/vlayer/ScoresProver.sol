@@ -14,9 +14,10 @@ contract ScoresProver is Prover {
 
     function proveScores() public returns (Proof memory, ForestSlasher.EpochScoreAggregate[] memory) {
         // TODO: Call real aggregateScores() function
+        // Get aggregates from the contract
         // ForestSlasher.EpochScoreAggregate[] memory aggregates = forestSlasher.aggregateScores();
 
-        // TODO: Remove this mock
+        // TODO: Temp mock, remove this if above is implemented
         ForestSlasher.EpochScoreAggregate[] memory aggregates = new ForestSlasher.EpochScoreAggregate[](3);
         for (uint256 i = 0; i < 3; i++) {
             aggregates[i] = ForestSlasher.EpochScoreAggregate({
